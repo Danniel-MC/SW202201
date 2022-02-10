@@ -31,6 +31,30 @@ class Pacientes {
     });
   } //end new
 
+
+
+	const express = require("express");
+	let router = express.Router();
+	
+	let productModel = require('../../models/productos.model')();
+	
+	router.get('/one/:id', (req, res)=>{
+		let { id } = req.params;
+	  id = Number(id);
+	  productModel.getOne( id, (err, rslts)=>{
+	    
+      
+	  });
+	});
+16	
+17	module.exports = router;
+
+
+
+
+
+
+
   getAll() {
     return new Promise((accept, reject) => {
       db.all("SELECT * from pacientes;", (err, rows) => {
