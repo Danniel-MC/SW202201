@@ -4,9 +4,9 @@ describe("Testing Pacientes Model", () => {
   let pacientesModel = undefined;
   beforeAll(() => {
     return (pacientesModel = new Pacientes());
-  }); //end beforeAll
+  });
 
-  it("pacientesModel esta definido", () => {
+  it("pacientesModel Esta Definido", () => {
     return expect(pacientesModel).toBeDefined();
-  }); //end it pacientesModel
+  });
 }); //end describe
