@@ -7,7 +7,7 @@ const expedienteModel = new ExpedienteModel();
 router.get("/", (req, res) => {
   res.status(200).json({
     endpoint: "expedientes",
-    update: new Date(2022, 0, 29, 01, 26, 00),
+    update: new Date(2022, 0, 29, 1, 26, 0),
     author: "dannielmc_",
   });
 }); //get / close

@@ -2,5 +2,13 @@ git add .
 git commit -m "name"
 git push origin master
 
+var docs = [];
+for ( var i=0; i<100; i++){
+    docs.push({
+        "documentos":(i+1),
+        "nota":Math.floor(Math.random()*100),
+        "tag":[]
+    });
+}
 
-erik
+db.notas.insertMany(docs);

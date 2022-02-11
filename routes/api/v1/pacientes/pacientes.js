@@ -8,7 +8,7 @@ const pacienteModel = new PacienteModel();
 router.get("/", (req, res) => {
   res.status(200).json({
     endpoint: "Pacientes",
-    update: new Date(2022, 0, 29, 01, 26, 00),
+    update: new Date(2022, 0, 29, 1, 26, 0),
   });
 }); //get / close
 
